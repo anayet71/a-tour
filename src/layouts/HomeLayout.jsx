@@ -1,5 +1,5 @@
-import logo from '../assets/Rectangle 1.png'
-import Banner from '../components/layout-component/Banner';
+import { Outlet } from 'react-router-dom';
+import logo from '../assets/Rectangle 1.png';
 import Navbar from '../components/layout-component/Navbar';
 
 const HomeLayout = () => {
@@ -11,15 +11,13 @@ const HomeLayout = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                height: '100vh',
-                width: '100%',
+                minHeight: '100vh',
                 color: 'white',
             }}
         >
-            {/* Content wrapper */}
             <div className="w-11/12 mx-auto">
                 <Navbar />
-                <Banner />
+                <Outlet />
             </div>
         </div>
     );

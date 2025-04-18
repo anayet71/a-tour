@@ -4,6 +4,7 @@ import banner2 from '../../assets/Sreemongol.png'
 import banner3 from '../../assets/sundorbon.png'
 import right from '../../assets/right.png'
 import left from '../../assets/left.png'
+import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
@@ -18,7 +19,9 @@ const Banner = () => {
                     <button className="btn btn-warning"> Booking <FaArrowRightLong />
                     </button>
                 </div>
+                {/* Place images */}
                 <div className="flex gap-5  box-border">
+                    <Link to= 'cox'>
                     <div className=" hover:border-4 hover:border-yellow-600 transition-all duration-300 ease-in-out"
                         style={{
                             backgroundImage: `linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0)),
@@ -29,11 +32,10 @@ const Banner = () => {
                             width: '270px',    // Full width
                             color: 'white',
                             borderRadius: '25px'
-
-
                         }}
                     >
                     </div>
+                    </Link>
                     <div className=" hover:border-4 hover:border-yellow-600 transition-all duration-300 ease-in-out"
                         style={{
                             backgroundImage: `linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0)),
@@ -75,6 +77,7 @@ const Banner = () => {
                     </a>
                 </div>
             </div>
+            
         </div>
     );
 };
