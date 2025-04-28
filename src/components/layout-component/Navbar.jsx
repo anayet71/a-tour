@@ -6,9 +6,11 @@ const Navbar = () => {
     const {user} = useContext(AuthContext)
     return (
         <div className='w-11/12 mx-auto'>
+            <div>
+                { user && user.name}
+            </div>
             <nav className="flex items-center justify-between text-white pt-8">
                 {/* Logo */}
-             
                 <div className="flex items-center gap-2">
                     <Link to='/'>
                     <img src={logo} alt="Travel Guru" className="h-10" />
@@ -36,6 +38,7 @@ const Navbar = () => {
                     Login
                 </button>
                 </Link>
+                
             </nav>
         </div>
     );

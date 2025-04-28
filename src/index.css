@@ -4,5 +4,5 @@
     --font-primary:   "Bebas Neue", sans-serif;
     --font-secondary:   "Montserrat", sans-serif;
 }
-@import "tailwindcss"; 
+@import "tailwindcss";
 @plugin "daisyui";
